@@ -1,13 +1,20 @@
 .PHONY: all
 
 # TODO: figure out how to build both native and wasm without too much duplication
-CC_NATIVE=clang++ -lm -m64 -O3 -I utilities utilities/polybench.c
-CC_WASM=emcc -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c
+CC_NATIVE=clang++ -DMEDIUM_DATASET -lm -m64 -O3 -I utilities utilities/polybench.c
+CC_WASM=emcc.py -DMEDIUM_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c
 
 CC=$(CC_NATIVE)
+#CC=$(CC_WASM)
 EXT=.native
+#EXT=.wasm
 
-all: bin/floyd-warshall$(EXT) bin/nussinov$(EXT) bin/deriche$(EXT) bin/correlation$(EXT) bin/covariance$(EXT) bin/seidel-2d$(EXT) bin/adi$(EXT) bin/fdtd-2d$(EXT) bin/jacobi-1d$(EXT) bin/heat-3d$(EXT) bin/jacobi-2d$(EXT) bin/syr2k$(EXT) bin/gemver$(EXT) bin/gemm$(EXT) bin/symm$(EXT) bin/trmm$(EXT) bin/syrk$(EXT) bin/gesummv$(EXT) bin/doitgen$(EXT) bin/mvt$(EXT) bin/atax$(EXT) bin/3mm$(EXT) bin/2mm$(EXT) bin/bicg$(EXT) bin/ludcmp$(EXT) bin/cholesky$(EXT) bin/lu$(EXT) bin/trisolv$(EXT) bin/gramschmidt$(EXT) bin/durbin$(EXT)
+all: bin/floyd-warshall$(EXT) bin/nussinov$(EXT) bin/deriche$(EXT) bin/correlation$(EXT) bin/covariance$(EXT) bin/seidel-2d$(EXT) bin/adi$(EXT) bin/fdtd-2d$(EXT) bin/jacobi-1d$(EXT) bin/heat-3d$(EXT) bin/jacobi-2d$(EXT) bin/syr2k$(EXT) bin/gemver$(EXT) bin/gemm$(EXT) bin/symm$(EXT) bin/trmm$(EXT) bin/syrk$(EXT) bin/gesummv$(EXT) bin/doitgen$(EXT) bin/mvt$(EXT) bin/atax$(EXT) bin/3mm$(EXT) bin/2mm$(EXT) bin/bicg$(EXT) bin/ludcmp$(EXT) bin/cholesky$(EXT) bin/lu$(EXT) bin/trisolv$(EXT) bin/gramschmidt$(EXT) bin/durbin$(EXT) lucetbins
+
+LUCET_DIR=/project/titzer/lucet
+LUCETC=$(LUCET_DIR)/target/release/lucetc
+
+lucetbins: bin/floyd-warshall.lucet bin/nussinov.lucet bin/deriche.lucet bin/correlation.lucet bin/covariance.lucet bin/seidel-2d.lucet bin/adi.lucet bin/fdtd-2d.lucet bin/jacobi-1d.lucet bin/heat-3d.lucet bin/jacobi-2d.lucet bin/syr2k.lucet bin/gemver.lucet bin/gemm.lucet bin/symm.lucet bin/trmm.lucet bin/syrk.lucet bin/gesummv.lucet bin/doitgen.lucet bin/mvt.lucet bin/atax.lucet bin/3mm.lucet bin/2mm.lucet bin/bicg.lucet bin/ludcmp.lucet bin/cholesky.lucet bin/lu.lucet bin/trisolv.lucet bin/gramschmidt.lucet bin/durbin.lucet
 
 # TODO: figure out how to factor out build rules for most binaries
 bin/floyd-warshall$(EXT): medley/floyd-warshall/floyd-warshall.*
@@ -99,6 +106,9 @@ bin/gramschmidt$(EXT): linear-algebra/solvers/gramschmidt/*
 
 bin/durbin$(EXT): linear-algebra/solvers/durbin/*
 	$(CC) -o bin/durbin$(EXT) -I linear-algebra/solvers/durbin/ linear-algebra/solvers/durbin/durbin.c
+
+%.lucet: %.wasm
+	$(LUCETC) --bindings $(LUCET_DIR)/lucet-wasi/bindings.json -o $@ $<
 
 clean:
 	rm -f bin/*
