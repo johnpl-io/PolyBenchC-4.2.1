@@ -1,13 +1,17 @@
 .PHONY: all
 
 # TODO: figure out how to build both native and wasm without too much duplication
-CC_NATIVE=clang++ -DMEDIUM_DATASET -lm -m64 -O3 -I utilities utilities/polybench.c
-CC_WASM=emcc.py -DMEDIUM_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c
 
-CC=$(CC_NATIVE)
-#CC=$(CC_WASM)
-EXT=.native
-#EXT=.wasm
+MEDIUM_MEMORY=8MB
+LARGE_MEMORY=256MB
+
+CC_NATIVE=clang++ -DMEDIUM_DATASET -lm -m64 -O3 -I utilities utilities/polybench.c
+CC_WASM=emcc.py -DMEDIUM_DATASET -lm -O3 -s TOTAL_MEMORY=$(MEDIUM_MEMORY) -I utilities utilities/polybench.c
+
+#CC=$(CC_NATIVE)
+CC=$(CC_WASM)
+#EXT=.native
+EXT=.wasm
 
 all: bin/floyd-warshall$(EXT) bin/nussinov$(EXT) bin/deriche$(EXT) bin/correlation$(EXT) bin/covariance$(EXT) bin/seidel-2d$(EXT) bin/adi$(EXT) bin/fdtd-2d$(EXT) bin/jacobi-1d$(EXT) bin/heat-3d$(EXT) bin/jacobi-2d$(EXT) bin/syr2k$(EXT) bin/gemver$(EXT) bin/gemm$(EXT) bin/symm$(EXT) bin/trmm$(EXT) bin/syrk$(EXT) bin/gesummv$(EXT) bin/doitgen$(EXT) bin/mvt$(EXT) bin/atax$(EXT) bin/3mm$(EXT) bin/2mm$(EXT) bin/bicg$(EXT) bin/ludcmp$(EXT) bin/cholesky$(EXT) bin/lu$(EXT) bin/trisolv$(EXT) bin/gramschmidt$(EXT) bin/durbin$(EXT) lucetbins
 
