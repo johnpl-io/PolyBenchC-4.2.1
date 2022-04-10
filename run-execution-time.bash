@@ -32,10 +32,6 @@ function run() {
     fi
 }
 
-if [ "$WIZENG_VARIANTS" = "" ]; then
-    WIZENG_VARIANTS=$(cd /tmp/wizeng && ls wizeng*)
-fi
-
 for f in $BENCHMARKS; do
     p=bin/$f
     w=$p.wasm
@@ -82,19 +78,4 @@ for f in $BENCHMARKS; do
     # TODO: https://github.com/bytecodealliance/sightglass
 done
 cd
-
-function v8_liftoff_compile_time() {
-    # microseconds
-    $V8 $V8_TIER_LIFTOFF --dump-counters $@ | grep t:V8.WasmCompileFunctionMicroSeconds.wasm | cut -d\| -f3
-}
-
-function v8_liftoff_compiled_bytes() {
-    # microseconds
-    $V8 $V8_TIER_LIFTOFF --dump-counters $@ | grep t:V8.WasmCompileFunctionMicroSeconds.wasm | cut -d\| -f3
-}
-
-function v8_turbofan_compile_time() {
-    # microseconds
-    $V8 $V8_TIER_TURBOFAN --dump-counters $@ | grep t:V8.WasmCompileFunctionMicroSeconds.wasm | cut -d\| -f3
-}
 
