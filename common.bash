@@ -44,7 +44,7 @@ JSC_TIER_OMG="--useOMGJIT=true --useBBQJIT=false"
 JSC_TIER_BBQ="--useWasmLLInt=false --useOMGJIT=false --useBBQJIT=true"
 
 COLORS=${COLORS:=true}
-COUNT=${COUNT:=1}
+RUNS=${RUNS:=1}
 
 if [ "$WIZENG_VARIANTS" = "" ]; then
     WIZENG_VARIANTS=$(cd /tmp/wizeng && ls wizeng*)

@@ -6,10 +6,10 @@ if [ $# != 0 ]; then
     BENCHMARKS=$@
 fi
 
-DIVIDE=1
+PRINT_RATIO=0
 
 function ratio() {
-    if [ "$DIVIDE" = "0" ]; then
+    if [ "$PRINT_RATIO" != "0" ]; then
         echo "$1"/"$2"
     else
         echo "scale=6;" "$1"/"$2" | bc
@@ -114,22 +114,17 @@ function run() {
     engine=$1
     DATAFILE=data/translation.$BENCHMARK.$engine
     
-    if [ "$COUNT" -gt 1 ]; then
+    if [ "$RUNS" -gt 1 ]; then
         printf "%s" "$engine"
         shift
         $COLORS && printf "$NORM"
         printf "\n"
         i=0
-#        printf "\t"
-        while [ $i -lt "$COUNT" ]; do
-            #    /usr/bin/time --quiet -o /tmp/$USER-bench-times -f "real=%E user=%Us mem=%M faults=%R exit=%x" $@ > /dev/null 2&> 1
-            #    cat /tmp/$USER-bench-times
+        while [ $i -lt "$RUNS" ]; do
             VAL=$(echo $($@))
-#            echo $VAL
             printf "\t%-10s\n" "$VAL"
             i=$(($i + 1))
         done
-#        printf "\n"
     else
         printf "%-12s " "$engine"
         shift

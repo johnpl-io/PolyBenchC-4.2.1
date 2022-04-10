@@ -9,14 +9,14 @@ fi
 function run() {
     $COLORS && printf "$CYAN"
 
-    if [ "$COUNT" -gt 1 ]; then
+    if [ "$RUNS" -gt 1 ]; then
         printf "%s" "$1"
         shift
         $COLORS && printf "$NORM"
         printf "\n"
         i=0
         TIMEFORMAT="        %3R %3U %3S"
-        while [ $i -lt "$COUNT" ]; do
+        while [ $i -lt "$RUNS" ]; do
             #    /usr/bin/time --quiet -o /tmp/$USER-bench-times -f "real=%E user=%Us mem=%M faults=%R exit=%x" $@ > /dev/null 2&> 1
             #    cat /tmp/$USER-bench-times
             time $@ > /dev/null 2&>1
