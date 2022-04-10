@@ -9,11 +9,7 @@ END {
     asort(nums)  #  Here, we sort the array that
                  #+ contains the stored input
  
-    p50 = (NR % 2 == 0) ?  #  Let's be carefull with the
-                              #+ short-if syntax
-        ( nums[NR / 2] + nums[(NR / 2) + 1] ) / 2 \
-        :
-        nums[int(NR / 2) + 1]
+    p5 = nums[NR * 5 / 100]
 
-    printf "%s\n", p50
+    printf "%s\n" p5
 }

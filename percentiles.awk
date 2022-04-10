@@ -15,5 +15,17 @@ END {
         :
         nums[int(NR / 2) + 1]
 
-    printf "%s\n", p50
+    p5 = nums[NR * 5 / 100]
+    p95 = nums[NR * 95 / 100]
+
+    mean = sum/NR
+ 
+    printf \
+        "min=%s, P5=%s, P50=%s, P95=%s, max=%s, avg=%s\n",\
+        nums[1],\
+        p5,\
+        p50,\
+        p95,\
+        nums[NR],\
+        mean
 }
