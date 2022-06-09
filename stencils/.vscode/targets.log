@@ -1,0 +1,1173 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jun  9 19:31:28 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# makefile (from 'Makefile', line 14)
+EXT = .wasm
+# environment
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/john/.gtkrc:/home/john/.config/gtkrc
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-98268137-e8ca-4427-b8e4-1b852981e66b.sock
+# environment
+VSCODE_CWD = /home/john
+# makefile (from 'Makefile', line 8)
+CC_NATIVE = clang++ -DLARGE_DATASET -lm -m64 -O3 -I utilities utilities/polybench.c
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/john/Documents/reu2022stuff/PolyBenchC-4.2.1
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/john
+# environment
+XDG_DATA_DIRS = /home/john/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# environment
+OLDPWD = /home/john
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/john/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/john/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 5)
+MEDIUM_MEMORY = 8MB
+# makefile
+CURDIR := /home/john/Documents/reu2022stuff/PolyBenchC-4.2.1
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /home/john/.config/kdedefaults:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XCURSOR_THEME = Layan-white-cursors
+# environment
+XDG_SESSION_DESKTOP = KDE
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 4735
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/archpc:@/tmp/.ICE-unix/883,unix/archpc:/tmp/.ICE-unix/883
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 19)
+LUCETC = $(LUCET_DIR)/target/release/lucetc
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 18)
+LUCET_DIR = /project/titzer/lucet
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/emscripten:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 9)
+CC_WASM = emcc.py -DLARGE_DATASET -lm -O3 -s TOTAL_MEMORY=$(LARGE_MEMORY) -I utilities utilities/polybench.c
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?F = $(notdir $?)
+# environment
+KDE_APPLICATIONS_AS_SCOPE = 1
+# environment
+XDG_SEAT = seat0
+# makefile (from 'Makefile', line 6)
+LARGE_MEMORY = 256MB
+# environment
+XDG_CURRENT_DESKTOP = KDE
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+DESKTOP_SESSION = plasma
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = john
+# environment
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 770
+# environment
+DISPLAY = :0
+# environment
+GTK_MODULES = canberra-gtk-module
+# environment
+USER = john
+# default
+MAKE_VERSION := 4.3
+# environment
+KDE_SESSION_UID = 1000
+# environment
+DEBUGINFOD_URLS = https://debuginfod.archlinux.org 
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/john/.gtkrc-2.0:/home/john/.config/gtkrc-2.0
+# environment
+HOME = /home/john
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-f7f7606b-1.67.2-main.sock
+# environment
+XDG_SESSION_ID = 2
+# environment
+XCURSOR_SIZE = 24
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+KDE_SESSION_VERSION = 5
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 12)
+CC = $(CC_WASM)
+# environment
+KDE_FULL_SESSION = true
+# variable set hash-table stats:
+# Load=105/1024=10%, Rehash=0, Collisions=3/195=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# linear-algebra/blas/trmm (device 66309, inode 1934082): 4 files, no impossibilities.
+# linear-algebra/blas/syrk (device 66309, inode 1934081): 4 files, no impossibilities.
+# linear-algebra/solvers/cholesky (device 66309, inode 1934091): 4 files, no impossibilities.
+# linear-algebra/blas/gemver (device 66309, inode 1934077): 4 files, no impossibilities.
+# linear-algebra/kernels/mvt (device 66309, inode 1934089): 4 files, no impossibilities.
+# linear-algebra/blas/gemm (device 66309, inode 1934076): 4 files, no impossibilities.
+# stencils/fdtd-2d (device 66309, inode 1934103): 4 files, no impossibilities.
+# linear-algebra/kernels/doitgen (device 66309, inode 1934088): 4 files, no impossibilities.
+# linear-algebra/solvers/ludcmp (device 66309, inode 1934095): 4 files, no impossibilities.
+# linear-algebra/kernels/3mm (device 66309, inode 1934085): 4 files, no impossibilities.
+# linear-algebra/solvers/gramschmidt (device 66309, inode 1934093): 4 files, no impossibilities.
+# . (device 66309, inode 1925937): 29 files, no impossibilities.
+# linear-algebra/blas/gesummv (device 66309, inode 1934078): 4 files, no impossibilities.
+# linear-algebra/solvers/lu (device 66309, inode 1934094): 4 files, no impossibilities.
+ 
+# linear-algebra/kernels/bicg (device 66309, inode 1934087): 4 files, no impossibilities.
+# medley/floyd-warshall (device 66309, inode 1934099): 4 files, no impossibilities.
+# stencils/adi (device 66309, inode 1934102): 4 files, no impossibilities.
+# linear-algebra/solvers/durbin (device 66309, inode 1934092): 4 files, no impossibilities.
+# stencils/seidel-2d (device 66309, inode 1934107): 4 files, no impossibilities.
+# stencils/heat-3d (device 66309, inode 1934104): 4 files, no impossibilities.
+# linear-algebra/solvers/trisolv (device 66309, inode 1934096): 4 files, no impossibilities.
+# medley/deriche (device 66309, inode 1934098): 4 files, no impossibilities.
+# linear-algebra/blas/symm (device 66309, inode 1934079): 4 files, no impossibilities.
+# datamining/correlation (device 66309, inode 1934072): 4 files, no impossibilities.
+# stencils/jacobi-2d (device 66309, inode 1934106): 4 files, no impossibilities.
+# stencils/jacobi-1d (device 66309, inode 1934105): 4 files, no impossibilities.
+# linear-algebra/blas/syr2k (device 66309, inode 1934080): 4 files, no impossibilities.
+# datamining/covariance (device 66309, inode 1934073): 4 files, no impossibilities.
+# linear-algebra/kernels/2mm (device 66309, inode 1934084): 4 files, no impossibilities.
+# medley/nussinov (device 66309, inode 1934100): 5 files, no impossibilities.
+# linear-algebra/kernels/atax (device 66309, inode 1934086): 4 files, no impossibilities.
+
+# 150 files, no impossibilities in 31 directories.
+
+# Implicit Rules
+
+%.lucet: %.wasm
+#  recipe to execute (from 'Makefile', line 115):
+	$(LUCETC) --bindings $(LUCET_DIR)/lucet-wasi/bindings.json -o $@ $<
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+bin/jacobi-1d.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/kernels/mvt/mvt.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+medley/nussinov/nussinov.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/doitgen.wasm: linear-algebra/kernels/doitgen/doitgen.c linear-algebra/kernels/doitgen/doitgen.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:29.759036663
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 79):
+	$(CC) -o bin/doitgen$(EXT) -I linear-algebra/kernels/doitgen/ linear-algebra/kernels/doitgen/doitgen.c
+
+# Not a target:
+bin/heat-3d.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/floyd-warshall.wasm: medley/floyd-warshall/floyd-warshall.c medley/floyd-warshall/floyd-warshall.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:23.629315442
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 25):
+	$(CC) -o bin/floyd-warshall$(EXT) -I medley/floyd-warshall medley/floyd-warshall/floyd-warshall.c
+
+# Not a target:
+medley/deriche/deriche.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/solvers/cholesky/cholesky.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+medley/nussinov/nussinov.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/kernels/3mm/3mm.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/kernels/2mm/2mm.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/trisolv.wasm: linear-algebra/solvers/trisolv/trisolv.c linear-algebra/solvers/trisolv/trisolv.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:32.825538711
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 106):
+	$(CC) -o bin/trisolv$(EXT) -I linear-algebra/solvers/trisolv/ linear-algebra/solvers/trisolv/trisolv.c
+
+# Not a target:
+bin/2mm.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/seidel-2d.wasm: stencils/seidel-2d/seidel-2d.c stencils/seidel-2d/seidel-2d.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:25.352577444
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	$(CC) -o bin/seidel-2d$(EXT) -I stencils/seidel-2d stencils/seidel-2d/seidel-2d.c
+
+# Not a target:
+stencils/fdtd-2d/fdtd-2d.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/mvt.wasm: linear-algebra/kernels/mvt/mvt.c linear-algebra/kernels/mvt/mvt.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:30.092352976
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 82):
+	$(CC) -o bin/mvt$(EXT) -I linear-algebra/kernels/mvt/ linear-algebra/kernels/mvt/mvt.c
+
+# Not a target:
+linear-algebra/blas/syrk/syrk.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/gesummv/gesummv.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/syrk.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stencils/jacobi-2d/jacobi-2d.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/atax.wasm: linear-algebra/kernels/atax/atax.c linear-algebra/kernels/atax/atax.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:30.412336226
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 85):
+	$(CC) -o bin/atax$(EXT) -I linear-algebra/kernels/atax/ linear-algebra/kernels/atax/atax.c
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-07 15:06:19.836118796
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/syrk/syrk.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/adi.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/3mm.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/blas/trmm/trmm.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stencils/fdtd-2d/fdtd-2d.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+medley/floyd-warshall/floyd-warshall.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+medley/floyd-warshall/floyd-warshall.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/symm/symm.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stencils/adi/adi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/gesummv/gesummv.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/solvers/gramschmidt/gramschmidt.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/kernels/mvt/mvt.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/fdtd-2d.wasm: stencils/fdtd-2d/fdtd-2d.c stencils/fdtd-2d/fdtd-2d.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:26.042547482
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 46):
+	$(CC) -o bin/fdtd-2d$(EXT) -I stencils/fdtd-2d stencils/fdtd-2d/fdtd-2d.c
+
+# Not a target:
+linear-algebra/blas/symm/symm.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+bin/correlation.wasm: datamining/correlation/correlation.c datamining/correlation/correlation.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:24.63927432
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 34):
+	$(CC) -o bin/correlation$(EXT) -I datamining/correlation datamining/correlation/correlation.c
+
+# Not a target:
+bin/bicg.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/gesummv.wasm: linear-algebra/blas/gesummv/gesummv.c linear-algebra/blas/gesummv/gesummv.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:29.432386523
+#  File has been updated.
+#  Successfully updated.
+ 
+#  recipe to execute (from 'Makefile', line 76):
+	$(CC) -o bin/gesummv$(EXT) -I linear-algebra/blas/gesummv/ linear-algebra/blas/gesummv/gesummv.c
+
+# Not a target:
+bin/trisolv.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 118):
+	rm -f bin/*
+
+# Not a target:
+linear-algebra/solvers/cholesky/cholesky.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/floyd-warshall.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/kernels/bicg/bicg.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/solvers/lu/lu.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/kernels/3mm/3mm.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/jacobi-2d.wasm: stencils/jacobi-2d/jacobi-2d.c stencils/jacobi-2d/jacobi-2d.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:27.042502229
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 55):
+	$(CC) -o bin/jacobi-2d$(EXT) -I stencils/jacobi-2d stencils/jacobi-2d/jacobi-2d.c
+
+# Not a target:
+stencils/adi/adi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/gemver/gemver.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stencils/seidel-2d/seidel-2d.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/jacobi-2d.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/covariance.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/solvers/trisolv/trisolv.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/ludcmp.wasm: linear-algebra/solvers/ludcmp/ludcmp.c linear-algebra/solvers/ludcmp/ludcmp.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:31.79559579
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 97):
+	$(CC) -o bin/ludcmp$(EXT) -I linear-algebra/solvers/ludcmp/ linear-algebra/solvers/ludcmp/ludcmp.c
+
+# Not a target:
+linear-algebra/kernels/doitgen/doitgen.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/solvers/gramschmidt/gramschmidt.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/deriche.wasm: medley/deriche/deriche.c medley/deriche/deriche.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:24.312621189
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 31):
+	$(CC) -o bin/deriche$(EXT) -I medley/deriche medley/deriche/deriche.c
+
+bin/adi.wasm: stencils/adi/adi.c stencils/adi/adi.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:25.70256228
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 43):
+	$(CC) -o bin/adi$(EXT) -I stencils/adi stencils/adi/adi.c
+
+bin/nussinov.wasm: medley/nussinov/nussinov.c medley/nussinov/nussinov.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:23.975968414
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 28):
+	$(CC) -o bin/nussinov$(EXT) -I medley/nussinov medley/nussinov/nussinov.c
+
+bin/symm.wasm: linear-algebra/blas/symm/symm.c linear-algebra/blas/symm/symm.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:28.422436593
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 67):
+	$(CC) -o bin/symm$(EXT) -I linear-algebra/blas/symm/ linear-algebra/blas/symm/symm.c
+
+bin/heat-3d.wasm: stencils/heat-3d/heat-3d.c stencils/heat-3d/heat-3d.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:26.705850842
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) -o bin/heat-3d$(EXT) -I stencils/heat-3d stencils/heat-3d/heat-3d.c
+
+bin/syr2k.wasm: linear-algebra/blas/syr2k/syr2k.c linear-algebra/blas/syr2k/syr2k.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:27.389152596
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 58):
+	$(CC) -o bin/syr2k$(EXT) -I linear-algebra/blas/syr2k/ linear-algebra/blas/syr2k/syr2k.c
+
+# Not a target:
+bin/trmm.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/cholesky.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/blas/syr2k/syr2k.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/solvers/trisolv/trisolv.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/gemm.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/trmm.wasm: linear-algebra/blas/trmm/trmm.c linear-algebra/blas/trmm/trmm.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:28.762419992
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 70):
+	$(CC) -o bin/trmm$(EXT) -I linear-algebra/blas/trmm/ linear-algebra/blas/trmm/trmm.c
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/covariance.wasm: datamining/covariance/covariance.c datamining/covariance/covariance.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:24.972593844
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 37):
+	$(CC) -o bin/covariance$(EXT) -I datamining/covariance datamining/covariance/covariance.c
+
+# Not a target:
+bin/gramschmidt.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/syrk.wasm: linear-algebra/blas/syrk/syrk.c linear-algebra/blas/syrk/syrk.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:29.099070057
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 73):
+	$(CC) -o bin/syrk$(EXT) -I linear-algebra/blas/syrk/ linear-algebra/blas/syrk/syrk.c
+
+# Not a target:
+bin/gesummv.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/doitgen.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/fdtd-2d.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/kernels/2mm/2mm.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+all: bin/floyd-warshall.wasm bin/nussinov.wasm bin/deriche.wasm bin/correlation.wasm bin/covariance.wasm bin/seidel-2d.wasm bin/adi.wasm bin/fdtd-2d.wasm bin/jacobi-1d.wasm bin/heat-3d.wasm bin/jacobi-2d.wasm bin/syr2k.wasm bin/gemver.wasm bin/gemm.wasm bin/symm.wasm bin/trmm.wasm bin/syrk.wasm bin/gesummv.wasm bin/doitgen.wasm bin/mvt.wasm bin/atax.wasm bin/3mm.wasm bin/2mm.wasm bin/bicg.wasm bin/ludcmp.wasm bin/cholesky.wasm bin/lu.wasm bin/trisolv.wasm bin/gramschmidt.wasm bin/durbin.wasm
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/solvers/ludcmp/ludcmp.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/solvers/ludcmp/ludcmp.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stencils/seidel-2d/seidel-2d.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/kernels/atax/atax.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+medley/deriche/deriche.h:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stencils/jacobi-2d/jacobi-2d.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/kernels/doitgen/doitgen.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/syr2k/syr2k.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/nussinov.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stencils/heat-3d/heat-3d.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/3mm.wasm: linear-algebra/kernels/3mm/3mm.c linear-algebra/kernels/3mm/3mm.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:30.758984747
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 88):
+	$(CC) -o bin/3mm$(EXT) -I linear-algebra/kernels/3mm/ linear-algebra/kernels/3mm/3mm.c
+
+# Not a target:
+datamining/covariance/covariance.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+bin/bicg.wasm: linear-algebra/kernels/bicg/bicg.c linear-algebra/kernels/bicg/bicg.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:31.442281558
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 94):
+	$(CC) -o bin/bicg$(EXT) -I linear-algebra/kernels/bicg/ linear-algebra/kernels/bicg/bicg.c
+
+# Not a target:
+linear-algebra/blas/gemm/gemm.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+bin/gemver.wasm: linear-algebra/blas/gemver/gemver.c linear-algebra/blas/gemver/gemver.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:27.729136611
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 61):
+	$(CC) -o bin/gemver$(EXT) -I linear-algebra/blas/gemver/ linear-algebra/blas/gemver/gemver.c
+
+# Not a target:
+linear-algebra/solvers/durbin/durbin.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/lu.wasm: linear-algebra/solvers/lu/lu.c linear-algebra/solvers/lu/lu.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:32.482224521
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 103):
+	$(CC) -o bin/lu$(EXT) -I linear-algebra/solvers/lu/ linear-algebra/solvers/lu/lu.c
+
+bin/durbin.wasm: linear-algebra/solvers/durbin/durbin.c linear-algebra/solvers/durbin/durbin.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:33.49216739
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 112):
+	$(CC) -o bin/durbin$(EXT) -I linear-algebra/solvers/durbin/ linear-algebra/solvers/durbin/durbin.c
+
+# Not a target:
+bin/atax.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bin/gramschmidt.wasm: linear-algebra/solvers/gramschmidt/gramschmidt.c linear-algebra/solvers/gramschmidt/gramschmidt.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:33.155520057
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 109):
+	$(CC) -o bin/gramschmidt$(EXT) -I linear-algebra/solvers/gramschmidt/ linear-algebra/solvers/gramschmidt/gramschmidt.c
+
+# Not a target:
+bin/deriche.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/symm.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/solvers/durbin/durbin.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/jacobi-1d.wasm: stencils/jacobi-1d/jacobi-1d.c stencils/jacobi-1d/jacobi-1d.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:26.369199387
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 49):
+	$(CC) -o bin/jacobi-1d$(EXT) -I stencils/jacobi-1d stencils/jacobi-1d/jacobi-1d.c
+
+# Not a target:
+bin/correlation.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/kernels/atax/atax.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+bin/gemver.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lucetbins: bin/floyd-warshall.lucet bin/nussinov.lucet bin/deriche.lucet bin/correlation.lucet bin/covariance.lucet bin/seidel-2d.lucet bin/adi.lucet bin/fdtd-2d.lucet bin/jacobi-1d.lucet bin/heat-3d.lucet bin/jacobi-2d.lucet bin/syr2k.lucet bin/gemver.lucet bin/gemm.lucet bin/symm.lucet bin/trmm.lucet bin/syrk.lucet bin/gesummv.lucet bin/doitgen.lucet bin/mvt.lucet bin/atax.lucet bin/3mm.lucet bin/2mm.lucet bin/bicg.lucet bin/ludcmp.lucet bin/cholesky.lucet bin/lu.lucet bin/trisolv.lucet bin/gramschmidt.lucet bin/durbin.lucet
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+datamining/covariance/covariance.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/gemm/gemm.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+stencils/jacobi-1d/jacobi-1d.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/kernels/bicg/bicg.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+datamining/correlation/correlation.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+datamining/correlation/correlation.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+bin/cholesky.wasm: linear-algebra/solvers/cholesky/cholesky.c linear-algebra/solvers/cholesky/cholesky.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:32.12891089
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 100):
+	$(CC) -o bin/cholesky$(EXT) -I linear-algebra/solvers/cholesky/ linear-algebra/solvers/cholesky/cholesky.c
+
+# Not a target:
+bin/lu.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/syr2k.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/seidel-2d.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/ludcmp.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+linear-algebra/solvers/lu/lu.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/trmm/trmm.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+bin/gemm.wasm: linear-algebra/blas/gemm/gemm.c linear-algebra/blas/gemm/gemm.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:28.069120509
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 64):
+	$(CC) -o bin/gemm$(EXT) -I linear-algebra/blas/gemm/ linear-algebra/blas/gemm/gemm.c
+
+# Not a target:
+stencils/heat-3d/heat-3d.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+.PHONY: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/mvt.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bin/durbin.lucet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+stencils/jacobi-1d/jacobi-1d.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-06-06 13:51:44.083524735
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+linear-algebra/blas/gemver/gemver.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 13:51:44.080191318
+#  File has been updated.
+#  Successfully updated.
+
+bin/2mm.wasm: linear-algebra/kernels/2mm/2mm.c linear-algebra/kernels/2mm/2mm.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-07 15:06:31.102299939
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 91):
+	$(CC) -o bin/2mm$(EXT) -I linear-algebra/kernels/2mm/ linear-algebra/kernels/2mm/2mm.c
+
+# files hash-table stats:
+# Load=127/1024=12%, Rehash=0, Collisions=23/289=8%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 250 / storage = 4781 B / avg = 19 B
+# current buf: size = 8162 B / used = 4781 B / count = 250 / avg = 19 B
+
+# strcache performance: lookups = 380 / hit rate = 34%
+# hash-table stats:
+# Load=250/8192=3%, Rehash=0, Collisions=6/380=2%
+# Finished Make data base on Thu Jun  9 19:31:28 2022
+
+ 
