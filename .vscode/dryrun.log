@@ -1,0 +1,34 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/john/PolyBenchC-4.2.1'
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/floyd-warshall.wasm -I medley/floyd-warshall medley/floyd-warshall/floyd-warshall.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/nussinov.wasm -I medley/nussinov medley/nussinov/nussinov.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/deriche.wasm -I medley/deriche medley/deriche/deriche.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/correlation.wasm -I datamining/correlation datamining/correlation/correlation.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/covariance.wasm -I datamining/covariance datamining/covariance/covariance.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/seidel-2d.wasm -I stencils/seidel-2d stencils/seidel-2d/seidel-2d.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/adi.wasm -I stencils/adi stencils/adi/adi.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/fdtd-2d.wasm -I stencils/fdtd-2d stencils/fdtd-2d/fdtd-2d.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/jacobi-1d.wasm -I stencils/jacobi-1d stencils/jacobi-1d/jacobi-1d.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/heat-3d.wasm -I stencils/heat-3d stencils/heat-3d/heat-3d.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/jacobi-2d.wasm -I stencils/jacobi-2d stencils/jacobi-2d/jacobi-2d.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/syr2k.wasm -I linear-algebra/blas/syr2k/ linear-algebra/blas/syr2k/syr2k.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/gemver.wasm -I linear-algebra/blas/gemver/ linear-algebra/blas/gemver/gemver.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/gemm.wasm -I linear-algebra/blas/gemm/ linear-algebra/blas/gemm/gemm.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/symm.wasm -I linear-algebra/blas/symm/ linear-algebra/blas/symm/symm.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/trmm.wasm -I linear-algebra/blas/trmm/ linear-algebra/blas/trmm/trmm.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/syrk.wasm -I linear-algebra/blas/syrk/ linear-algebra/blas/syrk/syrk.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/gesummv.wasm -I linear-algebra/blas/gesummv/ linear-algebra/blas/gesummv/gesummv.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/doitgen.wasm -I linear-algebra/kernels/doitgen/ linear-algebra/kernels/doitgen/doitgen.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/mvt.wasm -I linear-algebra/kernels/mvt/ linear-algebra/kernels/mvt/mvt.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/atax.wasm -I linear-algebra/kernels/atax/ linear-algebra/kernels/atax/atax.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/3mm.wasm -I linear-algebra/kernels/3mm/ linear-algebra/kernels/3mm/3mm.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/2mm.wasm -I linear-algebra/kernels/2mm/ linear-algebra/kernels/2mm/2mm.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/bicg.wasm -I linear-algebra/kernels/bicg/ linear-algebra/kernels/bicg/bicg.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/ludcmp.wasm -I linear-algebra/solvers/ludcmp/ linear-algebra/solvers/ludcmp/ludcmp.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/cholesky.wasm -I linear-algebra/solvers/cholesky/ linear-algebra/solvers/cholesky/cholesky.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/lu.wasm -I linear-algebra/solvers/lu/ linear-algebra/solvers/lu/lu.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/trisolv.wasm -I linear-algebra/solvers/trisolv/ linear-algebra/solvers/trisolv/trisolv.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/gramschmidt.wasm -I linear-algebra/solvers/gramschmidt/ linear-algebra/solvers/gramschmidt/gramschmidt.c
+emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=256MB -I utilities utilities/polybench.c -o bin/durbin.wasm -I linear-algebra/solvers/durbin/ linear-algebra/solvers/durbin/durbin.c
+make: Leaving directory '/home/john/PolyBenchC-4.2.1'
+ 
