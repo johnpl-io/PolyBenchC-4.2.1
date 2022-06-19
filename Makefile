@@ -6,7 +6,7 @@ MEDIUM_MEMORY=8MB
 LARGE_MEMORY=256MB
 
 CC_NATIVE=clang++ -DSMALL_DATASET -lm -m64 -O3 -I utilities utilities/polybench.c
-CC_WASM=emcc.py -DSMALL_DATASET -lm -O3 -s TOTAL_MEMORY=$(LARGE_MEMORY) -I utilities utilities/polybench.c
+CC_WASM=emcc.py -DLARGE_DATASET -DPOLYBENCH_TIME -lm -O3 -s TOTAL_MEMORY=$(LARGE_MEMORY) -I utilities utilities/polybench.c
 
 #CC=$(CC_NATIVE)
 CC=$(CC_WASM)
